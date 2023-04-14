@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores Aritméticos</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            background-image: url(Design\ sem\ nome.png);
+        }
+      
+    </style>
+
 </head>
 <body>
     
@@ -52,9 +61,40 @@
     5 == 5   True   <br>
     4 != 4   False  <br>
 
+</p> 
+
+<h1>Operadores de Identidade</h1>
+
+<p>
+    5 == 5       True   <br>
+    5 == '5'     True   <br>
+    5 === '5'    False  <br>
 </p>
 
+<h1>Operadores Lógicos</h1>
+
+<p>
+    !    <br>
+    &&   <br>
+    ||   <br>
+</p>
+
+<h1>Operadores Ternario</h1>
+
+<p>
+     true ? true : false                                  <br>
+     ? = se   : = se não    ? = if   : = else             <br>
+     nota = media <= 8?'aprovado':'reprovado              <br>
+
+
+</p>
+
+
+
 <script>
+
+// Os testes estão sendo realizados via Alert 
+
    var q = 5 + 2
    var w = 5 - 2
    var e = 5 / 2
@@ -100,6 +140,47 @@
 // alert (r5)
 // alert (r6)
 
+    var i1 = 5 == 5
+    var i2 = 5 == '5'
+    var i3 = 5 === '5'
+
+//  alert (i1)
+//  alert (i2)
+//  alert (i3)
+
+let age = 20;
+let hasLicense = true;
+
+if (age >= 18 && hasLicense) {
+  console.log("Pode dirigir!");
+} else {
+  console.log("Não pode dirigir.");
+}
+
+let isRaining = true;
+let hasUmbrella = false;
+
+if (isRaining || hasUmbrella) {
+  console.log("Leve um guarda-chuva.");
+} else {
+  console.log("Não precisa de guarda-chuva.");
+}
+
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Faça login para continuar.");
+}
+
+// No primeiro exemplo, o operador AND é usado para verificar se a idade do usuário é maior ou igual a 18 e se ele possui uma carteira de motorista válida antes de permitir que ele dirija.
+
+// No segundo exemplo, o operador OR é usado para verificar se está chovendo ou se o usuário possui um guarda-chuva antes de sugerir que ele leve um guarda-chuva.
+
+// No terceiro exemplo, o operador NOT é usado para verificar se o usuário não está logado antes de sugerir que ele faça login.
+
+     var media = 7
+     var nota = media <= 8?'aprovado':'reprovado'
+ //  alert (nota)
 
 </script>
 

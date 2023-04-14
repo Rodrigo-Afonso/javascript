@@ -1,0 +1,19 @@
+@keyframes background {
+    0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+body {
+background: linear-gradient(to right, #E6050B,#F00581,#D50FD9,#AC05F0,#6705E6);
+background-size: 400% 400%;
+animation: background 10s ease infinite;
+
+
+}        

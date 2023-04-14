@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+
+        @keyframes degrade {
+            0%{
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0%  50%;
+            }
+        }
+
+        body { 
+            background-size: 400% 400%;
+            background-image:linear-gradient(to right, #2a009e, #067aac, #04f54c,#97a709,#f21818);
+            animation: degrade 10s ease infinite;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>introdução ao DOM</h1>
+    <p id="teste">paragrafo de teste</p>
+    <p name="para">vamos fazer alguns testes com  <strong>DOM</strong> e o seu modelo de árvore</p>
+    <div  class="divt">div de testes</div>
+
+    
+
+
+    <script>
+        // selecionando com DOM
+        // por Marca
+        // por Id
+        // por name
+        // por Classe
+        // por Selector
+        
+        
+        //Vamos começar pelo de Marca/Tag
+
+    var p1 = window.document.getElementsByTagName ('p')[1]
+    //window.document.write(p1.innerText) 
+
+    //se quiser "copiar até mesmo todas as tags dentro de P, utilize a forma a seguir"
+    window.document.write('utilizando Marca:' + p1.innerHTML)
+
+        //Utilizando Por id
+        var d = window.document.getElementById ('teste')
+        d.style.background= 'black'
+       // d.innerText='estou aguardando...' substitui o que estava escrito na tag 
+
+       //Utilizando por Name
+       var n= window.document.getElementsByName ('para') [1]
+       n.innerText= 'olá'
+ 
+    </script>
+</body>
+</html>
